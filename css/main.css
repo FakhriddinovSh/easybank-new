@@ -171,14 +171,13 @@ body{
   padding-top: 1px;
   background-image: url("../images/hero-mobile-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: calc(50% + 29px);
-  background-position-y: calc(50% - 95px);
+  background-size: contain;
+  background-position-x: calc(50% + 0px);
+  background-position-y: calc(50% - 115px);
 }
 
-
 .hero__content{
-  padding-top: 100px;
+  padding-top: 300px;
   width: 100%;
   min-width: 327px;
   margin: 0 auto;
@@ -186,6 +185,7 @@ body{
 }
 
 .hero__title{
+  margin-bottom: 16px;
   font-weight: 100;
   font-size: 40px;
   line-height: 47px;
@@ -195,6 +195,7 @@ body{
 }
 
 .hero__desc{
+  margin-bottom: 32px;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
