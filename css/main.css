@@ -1355,13 +1355,27 @@ a{
   }
   
   .hero{
+    position: relative;
     padding-top: 0px;
     padding-bottom: 88px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: none;
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+
+  .hero::after{
+    position: absolute;
+    content: "";
     background-image: url("../images/hero-tablet-desktop-bg.png");
-    background-position-x: calc(50% + 422px);
-    background-position-y: calc(50% - 58px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 480px);
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
   }
   
   .hero__content{
@@ -1562,12 +1576,41 @@ a{
     position: relative;
     padding-top: 0px;
     padding-bottom: 88px;
-    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/hero-tablet-desktop-bg.png");
-    background-position-x: calc(50% + 632px);
-    background-position-y: calc(50% - 58px);
+    background-image: none;
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+
+  .hero::before{
+    position: absolute;
+    content: "";
+    background-image: url("../images/hero-bg-layer.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 620px);
+    background-position-y: calc(50% + 20px);
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 100px;
+  }
+
+  .hero::after{
+    position: absolute;
+    content: "";
+    background-image: url("../images/hero-bg-tel.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: calc(50% + 109px);
+    background-position-y: calc(50% + -30px);
+    width: 671px;
+    height: 680px;
+    right: 0;
+    top: 0;
+    z-index: 101px;
   }
   
   .hero__content{
